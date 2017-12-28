@@ -1,0 +1,15 @@
+F:\AMyTest\MyUtils\Test\bin\Debug\Test.exe.config
+F:\AMyTest\MyUtils\Test\bin\Debug\Test.exe
+F:\AMyTest\MyUtils\Test\bin\Debug\Test.pdb
+F:\AMyTest\MyUtils\Test\bin\Debug\Utils.dll
+F:\AMyTest\MyUtils\Test\bin\Debug\Utils.pdb
+F:\AMyTest\MyUtils\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+F:\AMyTest\MyUtils\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+F:\AMyTest\MyUtils\Test\obj\Debug\Test.exe
+F:\AMyTest\MyUtils\Test\obj\Debug\Test.pdb
+F:\AMyTest\MyUtils\Test\bin\Debug\NPOI.dll
+F:\AMyTest\MyUtils\Test\bin\Debug\NPOI.OOXML.dll
+F:\AMyTest\MyUtils\Test\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\AMyTest\MyUtils\Test\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\AMyTest\MyUtils\Test\bin\Debug\NPOI.OpenXml4Net.dll
+F:\AMyTest\MyUtils\Test\bin\Debug\NPOI.xml

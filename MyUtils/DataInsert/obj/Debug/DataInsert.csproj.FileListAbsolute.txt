@@ -1,0 +1,13 @@
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\DataInsert.exe.config
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\DataInsert.exe
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\DataInsert.pdb
+F:\AMyTest\MyUtils\DataInsert\obj\Debug\DataInsert.csprojResolveAssemblyReference.cache
+F:\AMyTest\MyUtils\DataInsert\obj\Debug\DataInsert.csproj.CoreCompileInputs.cache
+F:\AMyTest\MyUtils\DataInsert\obj\Debug\DataInsert.exe
+F:\AMyTest\MyUtils\DataInsert\obj\Debug\DataInsert.pdb
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.dll
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.OOXML.dll
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.OpenXml4Net.dll
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.xml
