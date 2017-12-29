@@ -16,8 +16,8 @@ namespace DataInsert
         {
             Console.WriteLine(SqlHelper.GetConnSting());
             //string path = @"F:\AMyTest\MyUtils\DataInsert\Excel\隐患点表.xlsx";
-            string path = @"F:\隐患点表(6).xlsx";
-            DataTable dtExcel = Helper.ExcelHelper.ExcelToDataTable(path, "Sheet2",true);
+            string path = @"C:\Users\Administrator.MICROSO-8L59UM9\Desktop\隐患点表(7).xlsx";
+            DataTable dtExcel = Helper.ExcelHelper.ExcelToDataTable(path, "Sheet3",true);
             for (int i = 0; i < dtExcel.Rows.Count; i++)
             {
                 StringBuilder sb = new StringBuilder();

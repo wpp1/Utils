@@ -33,6 +33,7 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>C:\Users\Administrator.MICROSO-8L59UM9\Desktop\Release\Net40\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="NPOI">
       <HintPath>C:\Users\Administrator.MICROSO-8L59UM9\Desktop\Release\Net40\NPOI.dll</HintPath>
     </Reference>
@@ -55,6 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="JsonHelper.cs" />
     <Compile Include="NPOIHelper.cs" />
     <Compile Include="StringHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

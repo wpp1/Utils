@@ -11,3 +11,11 @@ F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.OOXML.dll
 F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.OpenXml4Net.dll
 F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.OpenXmlFormats.dll
 F:\AMyTest\MyUtils\DataInsert\bin\Debug\NPOI.xml
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\bin\Debug\DataInsert.exe.config
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\bin\Debug\DataInsert.exe
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\bin\Debug\DataInsert.pdb
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\bin\Debug\NPOI.xml
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\obj\Debug\DataInsert.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\obj\Debug\DataInsert.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\obj\Debug\DataInsert.exe
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert\obj\Debug\DataInsert.pdb

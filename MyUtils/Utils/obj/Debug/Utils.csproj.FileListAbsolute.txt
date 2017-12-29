@@ -10,3 +10,10 @@ F:\AMyTest\MyUtils\Utils\bin\Debug\NPOI.OOXML.dll
 F:\AMyTest\MyUtils\Utils\bin\Debug\NPOI.OpenXml4Net.dll
 F:\AMyTest\MyUtils\Utils\bin\Debug\NPOI.OpenXmlFormats.dll
 F:\AMyTest\MyUtils\Utils\bin\Debug\NPOI.xml
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\bin\Debug\Utils.dll
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\bin\Debug\Utils.pdb
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\bin\Debug\NPOI.xml
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.dll
+C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.pdb

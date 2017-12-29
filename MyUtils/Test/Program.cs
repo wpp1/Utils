@@ -12,10 +12,26 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            using (NPOIHelper excelHelper = new NPOIHelper(@"F:\隐患点表(6).xlsx"))
+            //using (NPOIHelper excelHelper = new NPOIHelper(@"F:\隐患点表(6).xlsx"))
+            //{
+            //    DataTable dt = excelHelper.ExcelToDataTable("Sheet1",true);
+            //    PrintData(dt);
+            //}
+            using (NPOIHelper excelHelper = new NPOIHelper(@"F:\test.xlsx"))
             {
-                DataTable dt = excelHelper.ExcelToDataTable("Sheet1",true);
-                PrintData(dt);
+                //DataTable dt = excelHelper.ExcelToDataTable("Sheet1", true);
+                //PrintData(dt);
+                DataTable dt = new DataTable();//创建表
+                dt.Columns.Add("ID", typeof(Int32));//添加列
+                dt.Columns.Add("Name", typeof(String));
+                dt.Columns.Add("Age", typeof(Int32));
+                dt.Rows.Add(new object[] { 1, "张三", 20 });//添加行
+                dt.Rows.Add(new object[] { 2, "李四", 25 });
+                dt.Rows.Add(new object[] { 3, "王五", 30 });
+                DataView dv = dt.DefaultView;//获取表视图
+                dv.Sort = " ID DESC";//按照ID倒序排序
+                dt = dv.ToTable();//转为表
+                excelHelper.DataTableToExcel(dt,"s1",true);
             }
             Console.ReadLine();
         }
