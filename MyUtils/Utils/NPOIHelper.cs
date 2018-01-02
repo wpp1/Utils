@@ -8,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Utils
 {
@@ -18,7 +19,7 @@ namespace Utils
     /// </summary>
     public class NPOIHelper : IDisposable
     {
-        private string fileName = null; //文件名
+        private string fileName = null; //文件名（路径）
         private IWorkbook workbook = null;
         private FileStream fs = null;
         private bool disposed;
@@ -84,6 +85,53 @@ namespace Utils
                     ++count;
                 }
                 workbook.Write(fs); //写入到excel
+
+                #region excel下载
+                // 写入到客户端  
+                MemoryStream ms = new System.IO.MemoryStream();
+                workbook.Write(ms);
+                HttpContext.Current.Response.ContentType = "application/vnd.ms-excel";
+                HttpContext.Current.Response.Charset = "UTF8";
+                //根据不同的浏览器设置对应的文件名
+                string attachFilename = "";
+                {
+                    string enCodeFilename = HttpUtility.UrlEncode(fileName, System.Text.Encoding.UTF8);
+                    string userAgent = HttpContext.Current.Request.Browser.Browser;
+                    userAgent = userAgent.ToLower();
+                    //IE浏览器
+                    if (userAgent.IndexOf("ie") != -1 || userAgent.IndexOf("mozilla") != -1)
+                    {
+                        attachFilename = @"filename=" + enCodeFilename;
+                    }
+                    //Opera浏览器只能采用filename* 
+                    else if (userAgent.IndexOf("opera") != -1)
+                    {
+                        attachFilename = @"filename*=UTF-8''" + enCodeFilename;
+                    }
+                    //FireFox浏览器
+                    else if (userAgent.IndexOf("firefox") != -1)
+                    {
+                        attachFilename = @"filename*=" + enCodeFilename;
+                    }
+                    //遨游
+                    else if (userAgent.IndexOf("chrome") != -1)
+                    {
+                        attachFilename = @"filename=" + enCodeFilename;
+                    }
+                    else
+                    {
+                        attachFilename = @"filename=" + enCodeFilename;
+                    }
+                }
+                HttpContext.Current.Response.AddHeader("Content-Disposition",
+                    string.Format("attachment;{0}.xls", attachFilename));
+                HttpContext.Current.Response.BinaryWrite(ms.ToArray());
+                HttpContext.Current.Response.End();
+                workbook = null;
+                ms.Close();
+                ms.Dispose();
+                #endregion
+
                 return count;
             }
             catch (Exception ex)
