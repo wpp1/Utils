@@ -9,18 +9,14 @@ namespace Utils
     public class StringHelper
     {
         /// <summary>
-        /// 截取字符串函数
+        /// 返回字符串字节数
         /// </summary>
-        /// <param name="str">所要截取的字符串</param>
-        /// <param name="num">截取字符串的长度</param>
-        /// <param name="flg">true:加...,flase:不加</param>
+        /// <param name="str"></param>
         /// <returns></returns>
-        public static string GetSubString(string str, int num, bool flg)
+        public static int GetSubString(string str)
         {
-            #region
             ASCIIEncoding ascii = new ASCIIEncoding();
             int tempLen = 0;
-            string tempString = "";
             byte[] s = ascii.GetBytes(str);
             for (int i = 0; i < s.Length; i++)
             {
@@ -32,28 +28,8 @@ namespace Utils
                 {
                     tempLen += 1;
                 }
-
-                try
-                {
-                    tempString += str.Substring(i, 1);
-                }
-                catch
-                {
-                    break;
-                }
-
-                if (tempLen > num)
-                    break;
             }
-            //如果截过则加上半个省略号
-            byte[] mybyte = System.Text.Encoding.Default.GetBytes(str);
-            if (mybyte.Length > num)
-                if (flg)
-                {
-                    tempString += "...";
-                }
-            return tempString;
-            #endregion
+            return tempLen;
         }
     }
 }

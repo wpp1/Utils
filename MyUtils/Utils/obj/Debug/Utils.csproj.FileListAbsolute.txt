@@ -17,3 +17,11 @@ C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\
 C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
 C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.dll
 C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.pdb
+F:\GitHub\MyUtils\Utils\bin\Debug\Utils.dll
+F:\GitHub\MyUtils\Utils\bin\Debug\Utils.pdb
+F:\GitHub\MyUtils\Utils\bin\Debug\Newtonsoft.Json.dll
+F:\GitHub\MyUtils\Utils\bin\Debug\NPOI.xml
+F:\GitHub\MyUtils\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+F:\GitHub\MyUtils\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+F:\GitHub\MyUtils\Utils\obj\Debug\Utils.dll
+F:\GitHub\MyUtils\Utils\obj\Debug\Utils.pdb
