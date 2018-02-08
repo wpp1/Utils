@@ -1,0 +1,5 @@
+F:\GitHub\Utils\MyUtils\DBUtility\bin\Release\DBUtility.dll
+F:\GitHub\Utils\MyUtils\DBUtility\bin\Release\DBUtility.pdb
+F:\GitHub\Utils\MyUtils\DBUtility\obj\Release\DBUtility.csproj.CoreCompileInputs.cache
+F:\GitHub\Utils\MyUtils\DBUtility\obj\Release\DBUtility.dll
+F:\GitHub\Utils\MyUtils\DBUtility\obj\Release\DBUtility.pdb

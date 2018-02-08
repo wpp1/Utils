@@ -1,0 +1,6 @@
+F:\GitHub\Utils\MyUtils\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
+F:\GitHub\Utils\MyUtils\Utils\bin\Release\Utils.dll
+F:\GitHub\Utils\MyUtils\Utils\bin\Release\Utils.pdb
+F:\GitHub\Utils\MyUtils\Utils\bin\Release\Newtonsoft.Json.dll
+F:\GitHub\Utils\MyUtils\Utils\obj\Release\Utils.dll
+F:\GitHub\Utils\MyUtils\Utils\obj\Release\Utils.pdb

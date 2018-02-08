@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{9d8157f3-9772-4c3c-8b93-f83acd93d002}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Utils\Utils.csproj">
       <Project>{1d47eaf8-a507-4e46-9d71-0b00470b952e}</Project>
       <Name>Utils</Name>

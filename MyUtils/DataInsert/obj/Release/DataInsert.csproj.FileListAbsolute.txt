@@ -1,0 +1,2 @@
+F:\GitHub\Utils\MyUtils\DataInsert\obj\Release\DataInsert.csprojResolveAssemblyReference.cache
+F:\GitHub\Utils\MyUtils\DataInsert\obj\Release\DataInsert.csproj.CoreCompileInputs.cache

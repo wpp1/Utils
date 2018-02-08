@@ -28,8 +28,6 @@ F:\GitHub\MyUtils\Utils\obj\Debug\Utils.pdb
 F:\GitHub\Utils\MyUtils\Utils\bin\Debug\Utils.dll
 F:\GitHub\Utils\MyUtils\Utils\bin\Debug\Utils.pdb
 F:\GitHub\Utils\MyUtils\Utils\bin\Debug\Newtonsoft.Json.dll
-F:\GitHub\Utils\MyUtils\Utils\bin\Debug\NPOI.xml
-F:\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
 F:\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
 F:\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.dll
 F:\GitHub\Utils\MyUtils\Utils\obj\Debug\Utils.pdb

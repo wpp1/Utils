@@ -1,0 +1,16 @@
+F:\GitHub\Utils\MyUtils\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+F:\GitHub\Utils\MyUtils\Test\obj\Release\Test.csproj.CoreCompileInputs.cache
+F:\GitHub\Utils\MyUtils\Test\bin\Release\Test.exe.config
+F:\GitHub\Utils\MyUtils\Test\bin\Release\Test.exe
+F:\GitHub\Utils\MyUtils\Test\bin\Release\Test.pdb
+F:\GitHub\Utils\MyUtils\Test\bin\Release\DBUtility.dll
+F:\GitHub\Utils\MyUtils\Test\bin\Release\Utils.dll
+F:\GitHub\Utils\MyUtils\Test\bin\Release\NPOI.dll
+F:\GitHub\Utils\MyUtils\Test\bin\Release\Newtonsoft.Json.dll
+F:\GitHub\Utils\MyUtils\Test\bin\Release\NPOI.OOXML.dll
+F:\GitHub\Utils\MyUtils\Test\bin\Release\NPOI.OpenXmlFormats.dll
+F:\GitHub\Utils\MyUtils\Test\bin\Release\NPOI.OpenXml4Net.dll
+F:\GitHub\Utils\MyUtils\Test\bin\Release\DBUtility.pdb
+F:\GitHub\Utils\MyUtils\Test\bin\Release\Utils.pdb
+F:\GitHub\Utils\MyUtils\Test\obj\Release\Test.exe
+F:\GitHub\Utils\MyUtils\Test\obj\Release\Test.pdb

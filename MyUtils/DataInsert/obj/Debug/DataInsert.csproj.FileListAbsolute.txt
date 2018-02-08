@@ -22,7 +22,6 @@ C:\Users\Administrator.MICROSO-8L59UM9\Documents\GitHub\Utils\MyUtils\DataInsert
 F:\GitHub\Utils\MyUtils\DataInsert\bin\Debug\DataInsert.exe.config
 F:\GitHub\Utils\MyUtils\DataInsert\bin\Debug\DataInsert.exe
 F:\GitHub\Utils\MyUtils\DataInsert\bin\Debug\DataInsert.pdb
-F:\GitHub\Utils\MyUtils\DataInsert\bin\Debug\NPOI.xml
 F:\GitHub\Utils\MyUtils\DataInsert\obj\Debug\DataInsert.csprojResolveAssemblyReference.cache
 F:\GitHub\Utils\MyUtils\DataInsert\obj\Debug\DataInsert.csproj.CoreCompileInputs.cache
 F:\GitHub\Utils\MyUtils\DataInsert\obj\Debug\DataInsert.exe
