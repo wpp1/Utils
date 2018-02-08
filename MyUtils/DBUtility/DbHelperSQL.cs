@@ -16,6 +16,95 @@ namespace DBUtility
         #region  执行简单SQL语句
 
         /// <summary>
+        /// 执行查询语句，返回SqlDataReader ( 注意：调用该方法后，一定要对SqlDataReader进行Close )
+        /// </summary>
+        /// <param name="strSQL">查询语句</param>
+        /// <returns>SqlDataReader</returns>
+        public static SqlDataReader ExecuteReader(string strSQL)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(strSQL, connection);
+            try
+            {
+                connection.Open();
+                SqlDataReader myReader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                return myReader;
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+        }
+
+        /// <summary>
+        /// 执行一条计算查询结果语句，返回查询结果（object）。
+        /// </summary>
+        /// <param name="SQLString">计算查询结果语句</param>
+        /// <returns>查询结果（object）</returns>
+        public static object GetSingle(string SQLString)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(SQLString, connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        object obj = cmd.ExecuteScalar();
+                        if ((Object.Equals(obj, null)) || (Object.Equals(obj, DBNull.Value)))
+                        {
+                            return null;
+                        }
+                        else
+                        {
+                            return obj;
+                        }
+                    }
+                    catch (SqlException e)
+                    {
+                        connection.Close();
+                        throw e;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 执行一条计算查询结果语句，返回查询结果（object）。
+        /// </summary>
+        /// <param name="SQLString">计算查询结果语句</param>
+        /// <param name="Times">超时时间</param>
+        /// <returns>查询结果（object）</returns>
+        public static object GetSingle(string SQLString, int Times)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand(SQLString, connection))
+                {
+                    try
+                    {
+                        connection.Open();
+                        cmd.CommandTimeout = Times;
+                        object obj = cmd.ExecuteScalar();
+                        if ((Object.Equals(obj, null)) || (Object.Equals(obj, DBNull.Value)))
+                        {
+                            return null;
+                        }
+                        else
+                        {
+                            return obj;
+                        }
+                    }
+                    catch (SqlException e)
+                    {
+                        connection.Close();
+                        throw e;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
         /// 执行SQL语句，返回影响的记录数
         /// </summary>
         /// <param name="SQLString">SQL语句</param>
@@ -158,6 +247,61 @@ namespace DBUtility
         #endregion
 
         #region 执行带参数的SQL语句
+
+        /// <summary>
+        /// 执行查询语句，返回SqlDataReader ( 注意：调用该方法后，一定要对SqlDataReader进行Close )
+        /// </summary>
+        /// <param name="strSQL">查询语句</param>
+        /// <returns>SqlDataReader</returns>
+        public static SqlDataReader ExecuteReader(string SQLString, params SqlParameter[] cmdParms)
+        {
+            SqlConnection connection = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand();
+            try
+            {
+                PrepareCommand(cmd, connection, null, SQLString, cmdParms);
+                SqlDataReader myReader = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                cmd.Parameters.Clear();
+                return myReader;
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+        }
+
+        /// <summary>
+        /// 执行一条计算查询结果语句，返回查询结果（object）。
+        /// </summary>
+        /// <param name="SQLString">计算查询结果语句</param>
+        /// <returns>查询结果（object）</returns>
+        public static object GetSingle(string SQLString, params SqlParameter[] cmdParms)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    try
+                    {
+                        PrepareCommand(cmd, connection, null, SQLString, cmdParms);
+                        object obj = cmd.ExecuteScalar();
+                        cmd.Parameters.Clear();
+                        if ((Object.Equals(obj, null)) || (Object.Equals(obj, DBNull.Value)))
+                        {
+                            return null;
+                        }
+                        else
+                        {
+                            return obj;
+                        }
+                    }
+                    catch (SqlException e)
+                    {
+                        throw e;
+                    }
+                }
+            }
+        }
 
         /// <summary>
         /// 执行SQL语句，返回影响的记录数
